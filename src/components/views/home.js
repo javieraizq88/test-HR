@@ -115,9 +115,9 @@ const Home = props => {
             console.log(name);
         });
 
-        
+
     }
-    
+
 
 
 
@@ -126,6 +126,7 @@ const Home = props => {
         <>
             <div id="body">
                 <h1> Test HackerRank para Talentuum </h1>
+                <p>Para ver las respuestas, debe abrir el inspector y luego el console</p>
                 <br />
                 <div className="row">
                     <div className="col-sm-12 col-md-4 col-lg-3 card">
@@ -186,6 +187,11 @@ const Home = props => {
                 </div>
                 <br />
 
+                <p className="d-flex justify-content-center">
+                    <strong>
+                        Proyecto responsivo
+                    </strong>
+                </p>
 
             </div>
         </>

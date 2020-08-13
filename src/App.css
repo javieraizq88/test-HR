@@ -12,6 +12,12 @@ h1{
   padding-bottom: 10px;
 }
 
+p{
+  font-size: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
 h3{
   text-align: center;
 }
@@ -35,9 +41,9 @@ h3{
 }
 
 
-@media (max-width: 976px){
+@media (max-width: 986px){
   #body {
-    background-color: blue;
+    background-color: rgb(193, 248, 232);
   }
   .card{
     margin-left: 0;
@@ -50,9 +56,21 @@ h3{
   }
 }
 
+@media (max-width: 761px){
+  #body{
+    background-color: teal;
+  }
+  .btn-primary{
+    margin-left: 35%;
+  }
+}
+
 @media  (max-width: 570px) {
   #body {
     background-color: red;
+  }
+  h1{
+    zoom: 0.9;
   }
   .btn-primary,
   .btn-success,
