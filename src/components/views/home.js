@@ -3,7 +3,7 @@ import React from "react"
 const Home = props => {
 
 
-    const productName = ["ball", "box", "ball", "ball", "box"];
+    const productName = ["box", "box", "ball", "ball", "box"];
     const price = [2, 2, 2, 2, 2];
     const weight = [1, 2, 1, 1, 3];
 
@@ -37,7 +37,6 @@ const Home = props => {
         if (!array) {
             return
         }
-        // si el arreglo esta vacío, muestra EMPTY en console
         if (array.length === 0) {
             console.log('EMPTY');
         } else {
@@ -116,43 +115,78 @@ const Home = props => {
             console.log(name);
         });
 
+        
     }
-
+    
 
 
 
 
     return (
         <>
-            <h1> Test HackerRank </h1>
-            <br />
-            <div className="container">
-                <h2>
-                    Pregunta 1: Duplicated Products
-            </h2>
-                <button
+            <div id="body">
+                <h1> Test HackerRank para Talentuum </h1>
+                <br />
+                <div className="row">
+                    <div className="col-sm-12 col-md-4 col-lg-3 card">
+                        <div className="card-body">
+                            <h3>
+                                <strong>Pregunta 1:</strong>
+                            </h3>
+                            <h3>
+                                Duplicated Products
+                            </h3>
+                        </div>
+                        <div className="card-footer">
+                            <button
+                                className="btn btn-primary"
+                                onClick={() => numDuplicates(productName, price, weight)}>
+                                Ver respuesta en consola
+                            </button>
 
-                    onClick={() => numDuplicates(productName, price, weight)}
-                > Ver respuesta en consola
-            </button>
-                <hr />
-                <hr />
-                <h2>
-                    Pregunta 2: Super Stack 
-            </h2>
-                <button
-                    onClick={() => superStack(operations)}
-                > Ver respuesta en consola
-            </button>
-                <hr />
-                <hr />
-                <h2>
-                    Pregunta 3: Ancestral names
-            </h2>
-                <button
-                    onClick={() => sortRoman(ancestralNames)}
-                > Ver respuesta en consola
-            </button>
+                        </div>
+                    </div>
+
+                    <div className="col-sm-6 col-md-4 col-lg-3 card">
+                        <div className="card-body">
+                            <h3>
+                                <strong>Pregunta 2:</strong>
+                            </h3>
+                            <h3>
+                                Super Stack
+                            </h3>
+                        </div>
+                        <div className="card-footer">
+                            <button
+                                className="btbn btn-success"
+                                onClick={() => superStack(operations)}>
+                                Ver respuesta en consola
+                            </button>
+                        </div>
+                    </div>
+
+                    <div className="col-sm-6 col-md-4 col-lg-3 card">
+                        <div className="card-body">
+                            <h3>
+                                <strong>Pregunta 3:</strong>
+                            </h3>
+                            <h3>
+                                Ancestral names
+                            </h3>
+                        </div>
+                        <div className="card-footer">
+                            <button
+                                className="btbn btn-danger"
+                                onClick={() => sortRoman(ancestralNames)}>
+                                Ver respuesta en consola
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+                <br />
+
+
             </div>
         </>
     )
